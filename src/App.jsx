@@ -1,4 +1,3 @@
-import { LinearProgress } from "@mui/material"
 import { Joystick, Model, Skybox, ThirdPersonCamera, useKeyboard, useLoop, World, usePreload, useWindowSize } from "lingo3d-react"
 import { useRef, useState } from "react"
 import "./App.css"
@@ -58,7 +57,7 @@ const App = () => {
   if (progress < 100)
     return (
       <div className="loading">
-        <LinearProgress variant="determinate" value={progress} style={{ width: 300 }} />
+        loading {Math.round(progress)}%
       </div>
     )
 
