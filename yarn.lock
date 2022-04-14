@@ -845,10 +845,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-lingo3d-react@^1.2.38:
-  version "1.2.38"
-  resolved "https://registry.yarnpkg.com/lingo3d-react/-/lingo3d-react-1.2.38.tgz#a9e43506fcbd539d8335d7feb3ccd5b0725fafa8"
-  integrity sha512-17Pjd2FvSShqTb9tKKJ+EToEoUzdkjw7Rdp3pSWPqbPsad3D7wKZ0FfK8r9M7YVloaA1liU/7Ijot2ssKLj5Dw==
+lingo3d-react@^1.2.59:
+  version "1.2.59"
+  resolved "https://registry.yarnpkg.com/lingo3d-react/-/lingo3d-react-1.2.59.tgz#00298989da6c61556f35741aebca32587460203f"
+  integrity sha512-cuxy2DWrnxusH/H2+FGRzi4LA14Wu2b29TWRzfYf9qK5jL4U5pQr01VMurgIHGzSESaT7KxAMvjuozcU0j/GmQ==
   dependencies:
     "@lincode/hooks" "*"
     "@lincode/promiselikes" "*"
@@ -858,16 +858,16 @@ lingo3d-react@^1.2.38:
     "@lincode/reactivity" "*"
     "@lincode/utils" "*"
     "@tweakpane/core" "1"
-    lingo3d "1.10.41"
+    lingo3d "1.10.67"
     nanoid "3"
     popmotion "11"
     stats.js "^0.17.0"
     tweakpane "3"
 
-lingo3d@1.10.41:
-  version "1.10.41"
-  resolved "https://registry.yarnpkg.com/lingo3d/-/lingo3d-1.10.41.tgz#7db18fff3c9800ddb223e059bb93616d4b012643"
-  integrity sha512-tEoSBQmVS++WqNPQqgUarL5WUasMjlKHqeHrfMxOS4zvY2KQFZTVG1HqZ7Lr+hIPPrRnezqC7qalVC737FeYEw==
+lingo3d@1.10.67:
+  version "1.10.67"
+  resolved "https://registry.yarnpkg.com/lingo3d/-/lingo3d-1.10.67.tgz#85a49fe7507834d9d527f84f5964060e6a3d6bb4"
+  integrity sha512-H4hfcVRPB3w15zCMN1k4CxwpScW8p2gD/bQZWmH67WbO6ZexBeDbH3ATkAeczGCSA6ySW1l8GM3tYu1dbu2xGg==
   dependencies:
     "@lincode/events" "*"
     "@lincode/filetypes" "*"
