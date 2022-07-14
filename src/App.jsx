@@ -11,15 +11,18 @@ import {
 import { useRef, useEffect } from "react";
 import "./App.css";
 
-//Main game component that's rendered after loading is done
 const Game = () => {
-  //adjust FOV based on portrait or landscape orientation
+  // adjust FOV based on portrait or landscape orientation
+  // 根据横竖屏调整FOV
   const windowSize = useWindowSize();
   const fov = windowSize.width > windowSize.height ? 90 : 120;
 
-  //ref to the character model, used to imperatively move the character forward
+  // ref to the character model
+  // 角色模型ref
   const characterRef = useRef();
 
+  // keyboard WASD controls
+  // 键盘WASD控制
   useEffect(() => {
     keyboard.onKeyPress = (_, keys) => {
       const character = characterRef.current;
@@ -38,8 +41,11 @@ const Game = () => {
   return (
     <World skybox="skybox.jpg">
       {/* map model */}
+      {/* 地图模型 */}
       <Model src="fairy.glb" scale={30} physics="map" />
-      {/* camera and player character model */}
+
+      {/* camera and player character dummy */}
+      {/* 相机和角色dummy */}
       <ThirdPersonCamera
         active
         mouseControl
@@ -55,6 +61,7 @@ const Game = () => {
           strideMove
         />
       </ThirdPersonCamera>
+      
       {/* joystick */}
       {/* 摇杆 */}
       <Joystick
@@ -77,8 +84,9 @@ const Game = () => {
   );
 };
 
+// loading screen
+// 加载界面
 const App = () => {
-  //usePreload hook to preload assets, returns loading progress
   const progress = usePreload(
     ["fairy.glb", "person.glb", "skybox.jpg"],
     "21.2mb"
