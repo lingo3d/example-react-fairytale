@@ -68,7 +68,7 @@ const Game = () => {
           strideMove
         />
       </ThirdPersonCamera>
-      
+
       {/* joystick */}
       {/* 摇杆 */}
       <Joystick
