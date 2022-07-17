@@ -1,3 +1,5 @@
+import { DirectionalLight } from "lingo3d-react";
+import { SkyLight } from "lingo3d-react";
 import {
   Joystick,
   Model,
@@ -39,7 +41,12 @@ const Game = () => {
   }, []);
 
   return (
-    <World skybox="skybox.jpg">
+    <World defaultLight={false} skybox="skybox.jpg">
+      <SkyLight />
+      {/* light that casts shadows */}
+      {/* 投射阴影的灯光 */}
+      <DirectionalLight y={1000} x={-1000} z={1000} />
+
       {/* map model */}
       {/* 地图模型 */}
       <Model src="fairy.glb" scale={30} physics="map" />
